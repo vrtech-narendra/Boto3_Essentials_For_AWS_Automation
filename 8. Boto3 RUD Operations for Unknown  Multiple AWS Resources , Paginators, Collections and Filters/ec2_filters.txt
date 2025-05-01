@@ -1,0 +1,37 @@
+Filters = [
+    # Instance-specific filters
+    {'Name': 'instance-id', 'Values': ['i-0123456789abcdef0']},
+    {'Name': 'instance-state-name', 'Values': ['running', 'stopped']},
+    {'Name': 'instance-type', 'Values': ['t2.micro', 't3.micro']},
+    {'Name': 'availability-zone', 'Values': ['us-east-1a']},
+    {'Name': 'private-ip-address', 'Values': ['10.0.1.5']},
+    {'Name': 'public-ip-address', 'Values': ['3.120.45.67']},
+    {'Name': 'image-id', 'Values': ['ami-0abcdef1234567890']},
+    {'Name': 'subnet-id', 'Values': ['subnet-1234abcd']},
+    {'Name': 'vpc-id', 'Values': ['vpc-5678efgh']},
+    {'Name': 'architecture', 'Values': ['x86_64', 'arm64']},
+    {'Name': 'hypervisor', 'Values': ['xen', 'nitro']},
+    {'Name': 'root-device-type', 'Values': ['ebs', 'instance-store']},
+    {'Name': 'virtualization-type', 'Values': ['hvm', 'paravirtual']},
+    {'Name': 'tenancy', 'Values': ['default', 'dedicated']},
+    {'Name': 'platform', 'Values': ['windows']},  # only for Windows instances
+    {'Name': 'instance-lifecycle', 'Values': ['spot']},  # for Spot instances only
+    {'Name': 'launch-time', 'Values': ['2024-04-01T00:00:00Z']},
+
+    # Tag-based filters
+    {'Name': 'tag:Name', 'Values': ['webserver1']},
+    {'Name': 'tag:Environment', 'Values': ['dev', 'test']},
+    {'Name': 'tag:Project', 'Values': ['hr']},
+    {'Name': 'tag-key', 'Values': ['Owner']},
+    {'Name': 'tag-value', 'Values': ['devops']},
+
+    # Network interface filters
+    {'Name': 'network-interface.network-interface-id', 'Values': ['eni-0a1b2c3d4e5f6g7h8']},
+    {'Name': 'network-interface.addresses.private-ip-address', 'Values': ['10.0.0.25']},
+    {'Name': 'network-interface.addresses.association.public-ip', 'Values': ['13.58.123.45']},
+
+    # Monitoring & placement
+    {'Name': 'monitoring.state', 'Values': ['enabled']},
+    {'Name': 'placement-group-name', 'Values': ['my-placement-group']},
+    {'Name': 'client-token', 'Values': ['unique-token-123']},
+]

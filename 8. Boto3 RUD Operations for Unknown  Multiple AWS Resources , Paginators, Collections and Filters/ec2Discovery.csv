@@ -1,0 +1,9 @@
+S.No,Instance_ID,State,Type,Architecture,AMI_ID
+1,i-04cfff3ea1f6fcfca,running,t2.micro,x86_64,ami-0c02fb55956c7d316
+2,i-0289a1c4cea3d503a,running,t2.micro,x86_64,ami-0c02fb55956c7d316
+3,i-088d1c4ba7601bf90,running,t2.micro,x86_64,ami-0c02fb55956c7d316
+4,i-02ee3ac59cc4666d4,running,t2.nano,x86_64,ami-0c02fb55956c7d316
+5,i-056ee9ba02472562e,running,t2.nano,x86_64,ami-0c02fb55956c7d316
+6,i-0112cb5e6b35f6949,running,t2.micro,x86_64,ami-0c02fb55956c7d316
+7,i-00bd1f7bb7958558a,running,t2.micro,x86_64,ami-0c02fb55956c7d316
+8,i-04e8554ef4987c49a,running,t2.micro,x86_64,ami-0c02fb55956c7d316
