@@ -44,7 +44,7 @@ def main():
                     print(f"Deleting VolumeId {volumeId}....")
                     response = ec2Client.delete_volume(VolumeId=volumeId)
                     volumeIds.append(volumeId)
-                cnt+=1
+                    cnt+=1
         for eachVolumeId in volumeIds:
             print(f"Waiting to confirm volumeid {eachVolumeId} state as deleted...")
             waiter = ec2Client.get_waiter('volume_deleted')
@@ -52,7 +52,7 @@ def main():
             print(f"The volumeid {eachVolumeId} has been delete")
 
         if cnt==1:
-            print(f"There are no ebs volumes under given region {regionName}")        
+            print(f"There are no unused and untagged ebs volumes under given region {regionName}")        
 
        
     except ProfileNotFound:
